@@ -1,0 +1,20 @@
+div {
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+  }
+  
+  .perspective {
+    /* Includes a perspective to create a 3D space */
+    transform: perspective(400px) translateZ(-100px);
+    background-color: limegreen;
+  }
+  
+  .scaled-translated {
+    /* Includes a perspective to create a 3D space */
+    border:1px solid black;
+    margin-left:200px;
+    transform: perspective(400px) scaleZ(6) rotateX(45deg) rotateY(45deg) ;
+    background-color: pink;
+  }
+  
