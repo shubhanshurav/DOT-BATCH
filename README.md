@@ -1,20 +1,20 @@
 # DOT-BATCH
 
-### Course Instructor : Love Babbar Bhaiya
+- Course Instructor : Love Babbar Bhaiya
 
 #
 
 ## What you will learn 
 #
-#### HTML, CSS, JavaScript
-#### Tailwind CSS
-#### CSS Animations
-#### Core JavaScript
-#### End to End React.js Application
-#### 15+ Industry Grade Projects
-#### No Pre requisite required
-#### End to End Backend with Node.js and Express.js
-#### Building all Project from absolute Scratch
+- HTML, CSS, JavaScript
+- Tailwind CSS
+- CSS Animations
+- Core JavaScript
+- End to End React.js Application
+- 15+ Industry Grade Projects
+- No Pre requisite required
+- End to End Backend with Node.js and Express.js
+- Building all Project from absolute Scratch
 
 #
 
