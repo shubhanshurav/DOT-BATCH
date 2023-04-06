@@ -5,7 +5,7 @@
 #
 
 ## What you will learn 
-#
+
 #### HTML, CSS, JavaScript
 #### Tailwind CSS
 #### CSS Animations
@@ -15,7 +15,6 @@
 #### No Pre requisite required
 #### End to End Backend with Node.js and Express.js
 #### Building all Project from absolute Scratch
-
 #
 
 # HTML Basics
