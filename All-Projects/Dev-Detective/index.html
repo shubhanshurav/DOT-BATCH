@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective | Shubhanshu Rao</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+
+            <!-- heading container -->
+            <div class="heading-container">
+                <h1>Dev Detective</h1>
+                <button class="mode" id="modeBtn">
+                    <p class="modeName"></p>
+                    <img src="" alt="" class="modeIcon">
+                </button>
+            </div>
+
+            <!-- searchForm -->
+            <form action="" class="searchForm" autocomplete="off">
+                <div class="input-container">
+                    <label for="inputUser">
+                        <img src="./assets/images/search-icon.svg" alt="">
+                    </label>
+                    <input type="text" placeholder="Enter a Github username..." id="inputUser" class="username-input">
+                    <i class="fa-regular fa-circle-xmark cross"></i>
+                </div>
+                <submit class="searchBtn" >Search</submit>
+            </form>
+
+            <!-- user-info-container -->
+            <div class="user-info-container">
+                <!-- photo and headline -->
+                <div class="headline-container">
+                    <img src="" alt="" class="avatar">
+                    <!--  -->
+                    <div class="headline">
+                        <div class="github-name"></div>
+                        <div class="join-date"></div>
+                        <div class="username"><a class="username-link" href="" target="_blank"></a></div>
+                    </div>
+                </div>
+
+                <!-- bio -->
+                <div class="bio"></div>
+
+                <!-- networking -->
+                <div class="networking">
+                    <div class="repos">
+                        <p>Repos</p>
+                        <p class="repos-cnt"></p>
+                    </div>
+                    
+                    <div class="followers">
+                        <p>Followers</p>
+                        <p class="followers-cnt"></p>
+                    </div>
+                    
+                    <div class="following">
+                        <p>Following</p>
+                        <p class="following-cnt"></p>
+                    </div>
+                </div>
+
+                <!-- user details -->
+                <div class="user-details">
+                    <div class="detail" user-location-container>
+                        <img src="./assets/images/location-icon.svg" alt="">
+                        <p class="user-location"></p>
+                    </div>
+
+                    <div class="detail" user-website-container>
+                        <img src="./assets/images/website-icon.svg" alt="">
+                        <a class="user-website-link"></a>
+                    </div>
+
+                    <div class="detail" user-twitter-container>
+                        <img src="./assets/images/twitter-icon.svg" alt="">
+                        <a class="user-twitter-link"></a>
+                    </div>
+                    
+                    <div class="detail" user-company-container>
+                        <img src="./assets/images/company-icon.svg" alt="">
+                        <p class="user-company"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- user info not found -->
+            <div class="not-found">
+                <img src="./assets/images/not-found.png" alt="" class="not-found-img">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/7c96e2f33e.js" crossorigin="anonymous"></script>
+</body>
+</html>

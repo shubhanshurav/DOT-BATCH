@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.feature-section-2{
+    background-position: -400px 0;
+    background-size: 200% 100%;
+}
+
+.corefeaturesection{
+    background-size: 100% 100%;
+}
+
+.move-image{
+    animation: 20s infinite linear moveCompanies;
+}
+
+@keyframes moveCompanies {
+    0%{
+        top:0;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+.cta-section{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:768px) {
+    .feature-section-2{
+        background-position: 60% 50%;
+        background-size: 700% 100%;
+    }
+    
+    .corefeaturesection{
+        background-size: 350% 100% ;
+    }
+}
+
+@media (max-width:1024px) {
+    .cta-section{
+        background-size: 200% 100%;
+    }
+}

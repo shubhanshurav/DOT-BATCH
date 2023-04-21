@@ -1,0 +1,331 @@
+/* @media only screen and (max-width:1300px ){
+    .page-header{
+        padding-top: 30px;
+        color: var(--bgOrange);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .project-container{
+        padding: 5px;
+        margin: 10px;
+        gap: 60px;
+    }
+
+    .project-card{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project-content{
+        scale: 0.5;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .project-content-left{
+        left: 0;
+    }
+
+    .project-heading{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .project-sub-heading{
+        width: 100%;
+    }
+
+    #project2{
+        margin-left: 0;
+    }
+
+    #project4{
+        margin-left: 0;
+    }
+
+    .project-skill-container{
+        width: 100%;
+    }
+
+    .project-skill{
+        width: 35px;
+    }
+
+    .project-card:hover .project-number{
+        scale: 0.55;
+    }
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+    .container{
+        width: 50%;
+    }
+ } 
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+    .container{
+        width: 60%;
+    }  
+
+    .logo{
+        width: 3rem;
+    }
+
+    .logo-text{
+        font-size: 15px;
+    }
+
+    .faded-text{
+        font-size: 3em;
+        bottom: -17%;
+        left: -5%;
+     }
+
+    .nav-items div a {
+       font-size: 10px;
+       font-weight: 700;
+       text-transform: uppercase;
+    }
+
+    .hero-section-heading{
+        font-size: 22px;
+     }
+
+     .hero-section-sub-heading{
+        font-size: 25px;
+     }
+
+     .hero-section-description{
+        font-size: 13px;
+     }
+
+     .role{
+        font-size: 1.3rem;
+     }
+
+     .user-pic{
+        padding: 1.2rem;
+     }
+
+     .user-pic img{
+        width: 115px;
+        height: 140px;
+    }
+
+    .icons-cube img{
+        width: 20px;
+    }
+    
+    .icons-cube{
+        top: -0.6em;
+    }
+
+    .icons-circle img{
+        width: 18px;
+    }
+
+    .icons-plus img{
+        width: 24px;
+    }
+    
+    .icons-dots img{
+        width: 80px;
+    }
+
+    .icons-dots{
+        bottom: -1.5em;
+    }
+
+    .icons-zigzag img{
+        width: 25px;
+    }
+
+    .btn-pink{
+        width: 4.1rem;
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+    .container{
+        width: 90%;
+    }
+
+    .logo{
+        width: 35px;
+    }
+
+    .logo-text{
+        font-size: 18px;
+    }
+
+    .faded-text{
+        font-size: 3em;
+        bottom: -17%;
+        left: -5%;
+     }
+
+    .nav-items div a {
+       font-size: 10px;
+       font-weight: 700;
+       text-transform: uppercase;
+    }
+
+    .hero-section-heading{
+        font-size: 22px;
+     }
+
+     .hero-section-sub-heading{
+        font-size: 25px;
+     }
+
+     .hero-section-description{
+        font-size: 13px;
+     }
+
+     .role{
+        font-size: 1.3rem;
+     }
+
+     .user-pic{
+        padding: 1.2rem;
+     }
+
+     .user-pic img{
+        width: 215px;
+        height: 240px;
+    }
+
+    .icons-cube img{
+        width: 20px;
+    }
+    
+    .icons-cube{
+        top: -0.6em;
+    }
+
+    .icons-circle img{
+        width: 18px;
+    }
+
+    .icons-plus img{
+        width: 24px;
+    }
+    
+    .icons-dots img{
+        width: 80px;
+    }
+
+    .icons-dots{
+        bottom: -1.5em;
+    }
+
+    .icons-zigzag img{
+        width: 25px;
+    }
+
+    .btn-pink{
+        width: 4.1rem;
+        font-size: 18px;
+        padding: 8px;
+    }
+ }
+
+
+/* 
+ @media only screen and (min-width: 992px){
+    .container{
+        width: 100%;
+    }
+
+    .logo{
+        width: 55px;
+    }
+
+    .logo-text{
+        font-size: 25;
+    }
+
+    .faded-text{
+        font-size: 3.5em;
+        bottom: -15%;
+        left: -2.5%;
+     }
+
+    .hero-section-heading{
+        font-size: 28px;
+     }
+
+    .hero-section-sub-heading{
+        font-size: 36px;
+     }
+
+    .user-pic img{
+        width: 275px;
+        height: 300px;
+    }
+
+    .page-header{
+        font-size: 50px;
+     }
+
+     .project-container{
+        padding: 5px;
+        margin: 10px;
+        gap: 60px;
+    }
+
+     .project-card{
+        width: 80%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project-number{
+        text-align: center;
+        font-size: 150px;
+    }
+
+
+    .project-skills-container{
+        width: 60%;
+     }
+  
+     .project-skills{
+        width: 30px;
+     }
+
+     .project-heading{
+        font-size: 45px;
+     }
+  
+     .project-sub-heading{
+        width: 65%;
+        font-size: 14px;
+     }
+
+
+     .btn-project{
+        font-size: 12px;
+     }
+
+     .skill-container-left{
+        width: 40%;
+     }
+
+     .skill-container-right{
+        width: 40%;
+     }
+
+     .skills-logo{
+        width: 70px;
+     }
+
+ } */

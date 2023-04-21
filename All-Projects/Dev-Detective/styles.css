@@ -1,0 +1,496 @@
+:root {
+    --lm-shadow-xl: rgba(70,88,109,0.15);
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lm-bg);
+    overflow-y: auto;
+    padding: 2rem 5rem;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.2rem;
+}
+
+.heading-container{
+    width: 100%;
+    color: var(--lm-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.mode{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modeName{
+    color: var(--lm-text);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.modeIcon{
+    height: 1.5rem;
+}
+
+.searchForm{
+    background-color: var(--lm-bg-content);
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: var(--lm-shadow);
+    margin: 1rem 0;
+    gap: 0 5rem;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0 1rem;
+}
+
+label[for="inputUser"] img{
+    position: relative;
+    top: 3px;
+    height: 1.1rem;
+}
+
+.username-input{
+    background-color: transparent;
+    border: none;
+    color: var(--lm-text);
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.username-input::placeholder{
+    color: var(--lm-text);
+}
+
+.username-input:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+.cross{
+    font-size: 1.5rem;
+    color: #0079ff;
+    cursor: pointer;
+    background-color: transparent;
+    scale: 0;
+    transition: all 100ms ease-in-out;
+}
+
+.searchBtn{
+    padding: 0.8rem 1.7rem;
+    background-color: var(--btn);
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.searchBtn:hover{
+    background-color: var(--btn-hover);
+}
+
+.user-info-container{
+    background-color: var(--lm-bg-content);
+    padding: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: var(--lm-shadow);
+    margin: 1rem 0;
+    padding-left: 12.5rem;
+    scale: 0;
+    height: 0px;
+}
+
+.headline-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 3rem;
+    position: relative;
+    left: -10rem;
+    width: calc(100% + 10rem);
+}
+
+.avatar{
+    width: 7rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.headline{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: baseline;
+    color: var(--lm-text);
+}
+
+.join-date{
+    justify-self: right;
+}
+
+.github-name{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--lm-text-alt);
+}
+
+.username-link{
+    color: var(--btn);
+}
+
+.bio{
+    color: var(--lm-text);
+    opacity: 0.75;
+}
+
+.networking{
+    display: flex;
+    background-color: var(--lm-bg);
+    color: var(--lm-text);
+    gap: 0 5rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+}
+
+.repos, .followers, .following{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+
+.repos-cnt , .followers-cnt, .following-cnt{
+    font-size: 1.4rem;
+    color: var(--lm-text-alt);
+    font-weight: 700;
+}
+
+.user-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+    gap: 1rem;
+}
+
+.detail img{
+    height: 20px;
+}
+
+.user-website-link, .user-twitter-link, .user-company, .user-location{
+    word-break: break-all;
+    color: var(--lm-text);
+}
+
+.detail p{
+    word-break: break-all;
+    color: var(--lm-text);
+}
+
+.not-found{
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    scale: 0;
+    position: relative;
+    top: -2rem;
+}
+
+.not-found-img{
+    width: 80%;
+}
+
+.active{
+    scale: 1;
+    height: 100%;
+}
+
+.null{
+    opacity: 0.75;
+}
+
+@media screen and (max-width:855px){
+    .wrapper{
+        padding: 2rem;
+    }
+
+    .headline{
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        left: -1rem;
+    }
+
+    .user-info-container{
+        padding-left: 2.5rem;
+    }
+
+    .headline-container{
+        left: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .join-date{
+        justify-self: left;
+    }
+
+    .bio{
+        margin-top: 2rem;
+    }
+
+    .searchForm{
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .wrapper{
+        padding: 1.5rem;
+    }
+
+    .networking{
+        gap: 0 2rem;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .searchForm{
+        gap: 0 0.2rem;
+    }
+
+    .user-info-container{
+        padding: 1.5rem;
+    }
+
+    .searchBtn{
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (max-width:460px){
+
+    .username-input{
+        font-size: 0.8rem;
+    }
+
+    label[for="inputUser"] img{
+        height: 1rem;
+    }
+
+    .cross{
+        font-size: 0.9rem;
+    }
+
+    .searchForm, .user-info-container{
+        border-radius: 0.7rem;
+    }
+    
+    .searchBtn{
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .avatar{
+        width: 5rem;
+    }
+    
+    .user-info-container{
+        font-size: 0.8rem;
+    }
+
+    .github-name{
+        font-size: 1.3rem;
+    }
+
+    .repos-cnt , .followers-cnt, .following-cnt{
+        font-size: 1rem;
+    }
+
+    .networking{
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0.7rem;
+    }
+
+    .user-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .wrapper{
+        padding: 1rem;
+        height: 100%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 1.1rem;
+    }
+
+    .mode{
+        gap: 0 0.4rem;
+    }
+
+    .modeName{
+        font-size: 0.6rem;
+    }
+
+    .modeIcon{
+        height: 0.8rem;
+    }
+
+    .searchForm{
+        padding: 0.3rem 0.7rem;
+    }
+
+    label[for="inputUser"] img{
+        height: 0.75rem;
+    }
+
+    .username-input{
+        font-size: 0.7rem;
+    }
+    
+    .searchBtn{
+        font-size: 0.7rem;
+        padding: 0.1rem 0.3rem;
+    }
+    
+    .headline-container{
+        flex-direction: column;
+    }
+
+    .user-info-container{
+        font-size: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .headline{
+        place-items: center;
+        left: 0;
+    }
+
+    .github-name{
+        font-size: 0.9rem;
+    }
+
+    .join-date{
+        justify-self: center;
+    }
+
+    .bio{
+        margin-top: 1rem;
+    }
+
+    .networking{
+        /* flex-direction: column; */
+        gap: 1rem 0;
+    }
+
+    .repos, .followers, .following{
+        gap: 0.5rem 0;
+    }
+
+    .repos-cnt, .followers-cnt, .following-cnt{
+        gap: 0.5rem 0;
+        font-size: 0.65rem;
+    }
+
+    .detail{
+        margin: 0.5rem;
+    }
+
+    .detail img{
+        height: 0.6rem;
+    }
+
+}
+
+@media screen and (max-width:280px){
+    .modeName{
+        display: none;
+    }
+
+    .heading-container{    
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:220px){
+    .modeName{
+        display: block;
+    }
+
+    .heading-container{    
+        justify-content: center;
+    }
+}

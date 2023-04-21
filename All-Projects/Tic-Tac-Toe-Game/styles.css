@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.wrapper{
+    height: 100vh;
+    background-image: url('./assets/gradient-bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+.game-info{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+
+.tic-tac-toe{
+    height: auto;
+    max-width: 20rem;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    color: white;
+}
+
+.tic-tac-toe div:nth-child(3n+1), .tic-tac-toe div:nth-child(3n+2){
+    border-right: 2px solid white;
+}
+
+.tic-tac-toe div:nth-child(1), .tic-tac-toe div:nth-child(2), .tic-tac-toe div:nth-child(3), .tic-tac-toe div:nth-child(4), .tic-tac-toe div:nth-child(5), .tic-tac-toe div:nth-child(6){
+    border-bottom: 2px solid white;
+}
+
+.tic-tac-toe div:nth-child(1){
+    border-top-left-radius: 0.7rem;
+}
+.tic-tac-toe div:nth-child(3){
+    border-top-right-radius: 0.7rem;
+}
+.tic-tac-toe div:nth-child(7){
+    border-bottom-left-radius: 0.7rem;
+}
+.tic-tac-toe div:nth-child(9){
+    border-bottom-right-radius: 0.7rem;
+}
+
+.btn{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    text-align: center;
+    cursor: pointer;
+    scale: 0;
+}
+
+.active{
+    scale: 1;
+    cursor: pointer;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+@media screen and (max-width:400px){
+    .box{
+        font-size: 3rem;
+    }
+    .tic-tac-toe{
+        padding: 1rem;
+    }
+    .wrapper{
+        padding: 1.5rem 0.7rem;
+    }
+    .game-info, .btn{
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:300px){
+    .box{
+        font-size: 2.3rem;
+    }
+    .game-info, .btn{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width:250px){
+    .box{
+        font-size: 1.5rem;
+    }
+    .game-info, .btn{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:200px){
+    .box{
+        font-size: 1rem;
+    }
+    .game-info, .btn{
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width:150px){
+    .box{
+        font-size: 0.6rem;
+    }
+    .game-info, .btn{
+        font-size: 0.25rem;
+    }
+}
